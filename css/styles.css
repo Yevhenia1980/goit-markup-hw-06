@@ -931,6 +931,10 @@ body {
   border-color: transparent;
 }
 
+.checkbox-input:focus + .checkbox-label::before {
+  border-color: var(--focus-color);
+}
+
 .chexbox-link {
   color: #2196f3;
   cursor: pointer;
