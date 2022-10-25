@@ -589,8 +589,6 @@ body {
 }
 
 .footer-email-wrap {
-  display: block;
-  align-items: baseline;
   margin-left: auto;
 }
 
@@ -604,7 +602,6 @@ body {
 
 .footer-submit-wrap {
   display: flex;
-  position: relative;
 }
 
 .email-input {
@@ -625,6 +622,7 @@ body {
   border: 1px solid var(--focus-color);
 }
 .footer-submit-btn {
+  position: relative;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -655,7 +653,8 @@ body {
 .footer-submit-icon {
   position: absolute;
   top: 10px;
-  right: -20%;
+  right: 0;
+  transform: translateX(35%);
 }
 /*-------------portfolio------------- */
 
@@ -810,6 +809,7 @@ body {
   width: 30px;
   height: 30px;
   align-items: center;
+  background: transparent;
   transition: fill 250ms var(--transition-timing-function);
 }
 
@@ -830,10 +830,6 @@ body {
 .form-field {
   display: flex;
   flex-direction: column;
-  margin-bottom: 10px;
-}
-
-.form-field:not(:last-child) {
   margin-bottom: 10px;
 }
 
@@ -866,6 +862,7 @@ body {
   color: var(--link-text-color);
   line-height: 1.16;
   letter-spacing: 0.01em;
+  font-size: 12px;
 }
 
 .form-field-input::placeholder {
@@ -874,7 +871,7 @@ body {
 
 .textarea {
   resize: none;
-  height: 113px;
+  height: 120px;
   width: 100%;
   background-color: var(--background-color);
   border-radius: 4px;
